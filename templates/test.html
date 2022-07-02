@@ -8,18 +8,8 @@
   </head>
 
   <body>
-    {{posts}}
+    <p>{{post.title}}</p>
 
-    {% for post in posts %}
-      {% if post.status == 0 %}
-        <p> not published yet</p>
-
-      {% else %}
-        <h1>{{post.title}}</h1>
-        <p><h3>{{post.content}}<h3></p>
-        <small>{{post.published.date}}</small>
-      {% endif %}
-    {% endfor %}
 
   </body>
 </html>
